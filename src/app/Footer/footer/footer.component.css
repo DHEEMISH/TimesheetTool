@@ -1,0 +1,29 @@
+footer {
+    padding: 0.5em;
+    background:black;
+    color: white;
+  }
+  footer .footer-content {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-top: 0.01rem solid white;
+  }
+  footer .footer-content .cs-logo {
+    max-width: 10em;
+    width: 50%;
+  }
+  footer .footer-content .cs-logo img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  footer .contact {
+    max-width: 1440px;
+    margin: auto;
+    padding: 1em;
+  } 

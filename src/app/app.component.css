@@ -1,0 +1,26 @@
+.top-nav-bar
+{
+  background:black;
+  color:white;
+  padding: 1em;
+  text-align: center;
+}
+.right-aligned
+{
+    float: right;
+    margin: 2px;
+}
+.left-aligned
+{
+    float: left;
+}
+.container
+{
+  display:flex;
+  flex-direction: column;
+  min-height:100vh;
+}
+.main-content
+{
+  flex-grow:1;
+}

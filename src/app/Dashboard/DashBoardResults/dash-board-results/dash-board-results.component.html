@@ -1,0 +1,56 @@
+
+<div class="outer-input-details">
+  <div class="heading-style">Results</div>
+  <hr>
+<div class="radio-style">
+<span class="radio-spacing">
+  <mat-radio-group [formControl]="floatLabelControl">
+    
+    <mat-radio-button value="auto" class="interval-styles">Monthly View</mat-radio-button><br>
+    <mat-radio-button value="auto" class="interval-styles">Quarterly</mat-radio-button><br>
+    <mat-radio-button value="auto" class="interval-styles">Semi-Annual</mat-radio-button><br>
+    <mat-radio-button value="auto" class="interval-styles">Weekly View </mat-radio-button><br>
+    <mat-radio-button value="auto" class="interval-styles">Annual</mat-radio-button><br>
+  </mat-radio-group> 
+</span>
+
+
+<span class="dropdown-Vertical">
+  <div class="dropdown-style">
+    <app-dropdown-element [options]="optionMonthy"></app-dropdown-element>
+  </div>
+<div class="dropdown-style">
+<app-dropdown-element [options]="optionQuarterly"></app-dropdown-element>
+  </div>
+<div class="dropdown-style">
+<app-dropdown-element [options]="optionSemiAnnual"></app-dropdown-element>
+  </div>
+</span>
+<span class="dropdown-Vertical">
+<div class="dropdown-style">
+<app-dropdown-element [options]="optionYear"></app-dropdown-element>
+</div>
+</span>
+<span class="span-spacing">
+<button class="btn">Retrive-By User</button><br>
+<button class="btn">Absense-By User</button>
+
+</span>
+<span class="span-spacing">
+<button class="btn">Retrive All-By User</button><br>
+<button class="btn">Absense All-By User</button>
+</span>
+
+<span class="span-spacing" style="margin-right: 50px;">
+<button class="btn">Retrive All</button><br>
+<button class="btn">Absense All</button>
+</span>
+
+<span class="span-spacing">
+<mat-checkbox>Include Department</mat-checkbox><br>
+<button class="btn">Generate Invoice</button>
+</span>
+</div>
+
+
+</div>

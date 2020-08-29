@@ -1,0 +1,155 @@
+.outer-input-details{
+    margin: 20px;
+}
+
+.outer-button{
+    margin : 10px
+}
+.first-segment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.segment-common-style {
+    font-family: "Verdana";
+    font-size: 12px;
+    font-weight: bold;;
+}
+
+.link-style {
+    color: #191970;
+}
+
+.previous-next-style{
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box-style{
+    margin:auto 10px;
+    width: 50px;
+}
+
+.mat-form-field{
+    width: 60px;
+}
+
+.activity-dropdown > .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex{
+    max-width: 80px;
+}
+
+.outer-input-details{
+    margin: 20px;
+    background: #f3f4f9;
+    padding: 10px;
+}
+.heading-style{
+    font-size: 16px;
+    font-style: sans-serif;
+    font-weight: 500;
+}
+.user-style{
+    width: 250px;
+    height: 50px;
+    background: #d9e1e4;
+    border-radius: 10px;
+    height: 33px;
+    padding-left: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.first-segment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.segment-common-style {
+    font-family: "Verdana";
+    font-size: 12px;
+    font-weight: bold;;
+}
+
+.link-style {
+    color: #191970;
+}
+
+.previous-next-style{
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weekend-style{
+    padding-top: 10px;
+}
+
+.link-left{
+    margin-right: 25px;
+}
+
+.link-right{
+    margin-left: 25px;
+}
+
+.radio-style{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.radio-spacing{
+    margin-left: 10px;
+    margin-right: 40px;
+}
+.button-spacing{
+    margin-left: 100px;
+}
+.interval-styles{
+    padding: 5px;
+}
+
+.dropdown-Vertical
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2.5px;
+    margin-right: 40px;
+}
+
+.dropdown-style{
+    margin: 2.5px 0px 2.5px 10px;
+}
+
+.btn {
+    background-color: rgba(183, 213, 231, 0.911);
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 13px;
+    max-width: 150px ;
+  
+    transition: 0.3s;
+   
+  }
+  
+  .btn:hover {
+    background-color:#4a7191;
+    color:#dde3e8;
+  }
+
+ .span-spacing
+ {
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }

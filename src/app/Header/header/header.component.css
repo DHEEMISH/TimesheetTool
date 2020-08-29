@@ -1,0 +1,193 @@
+.header-wrapper {
+    margin: 0;
+    color: white;
+    font-family: Credit Suisse HeadLine;
+  }
+  .header-wrapper .nav-items {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .header-wrapper .header-container,
+  .header-wrapper .menu,
+  .header-wrapper .dropdown-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+  .header-wrapper .header-element,
+  .header-wrapper .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    cursor: pointer;
+    position: relative;
+  }
+  .header-wrapper .header-element:hover,
+  .header-wrapper .menu-item:hover {
+    background: white;
+    color: black;
+  }
+  .header-wrapper .logo {
+    flex-grow: 2;
+  }
+  .header-wrapper .logo:hover {
+    background: black;
+    color: white;
+    cursor: initial;
+  }
+  .header-wrapper .full-site-name {
+    display: none;
+  }
+  .header-wrapper .short-site-name {
+    display: block;
+  }
+  .header-wrapper .menu {
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-wrapper .menu .push-right {
+    flex-grow: 2;
+  }
+  .header-wrapper .menu .menu-item {
+    border-bottom: 2px solid transparent;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .header-wrapper .menu .menu-item:hover, .header-wrapper .menu .menu-item.active {
+    background: black;
+    color: white;
+  }
+  .header-wrapper .menu .menu-item .menu-item-text,
+  .header-wrapper .menu .menu-item .dropdown-wrapper {
+    padding: 1em;
+  }
+  .header-wrapper .menu .menu-item .dropdown-menu {
+    display: none;
+    position: relative;
+    top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 0;
+    color: black;
+    z-index: 100;
+  }
+  .header-wrapper .menu .menu-item .dropdown-menu .dropdown-menu-item {
+    padding: 1em;
+  }
+  .header-wrapper .menu .menu-item .dropdown-menu .dropdown-menu-item:hover {
+    background: rgba(0, 0, 0, 0.12);
+  }
+  .header-wrapper .menu .menu-item #dropdown-toggle:checked + .dropdown-menu {
+    display: block;
+  }
+  @media only screen and (min-width: 768px) {
+    .header-wrapper .full-site-name {
+      display: block;
+    }
+    .header-wrapper .short-site-name {
+      display: none;
+    }
+    .header-wrapper .menu {
+      display: flex;
+      flex-direction: row;
+    }
+    .header-wrapper .menu .menu-item {
+      flex-wrap: initial;
+    }
+    .header-wrapper .menu .menu-item #dropdown-toggle:checked + .dropdown-menu {
+      display: none;
+    }
+    .header-wrapper .menu .menu-item:hover, .header-wrapper .menu .menu-item.active {
+      border-bottom: 2px solid black;
+      background: initial;
+      opacity: 1;
+      color: black;
+    }
+    .header-wrapper .menu .menu-item:hover #dropdown-toggle + .dropdown-menu, .header-wrapper .menu .menu-item.active #dropdown-toggle + .dropdown-menu {
+      border-top: 2px solid black;
+      display: block;
+    }
+    .header-wrapper .menu .menu-item .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: -20%;
+      min-width: 11em;
+      border-radius: 4px;
+      background: white;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .top-nav {
+    background: black;
+  }
+  
+  .nav-icon-container,
+  .nav-link {
+    vertical-align: middle;
+  }
+  
+  .nav-icon,
+  .menu-icon {
+    width: 1.5em;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+  
+  .menu-icon {
+    width: 1.2em;
+  }
+  
+  .header-element:hover .nav-icon {
+    fill: black;
+  }
+  
+  .menu-item:hover .menu-icon,
+  .menu-item.active .menu-icon {
+    fill: white;
+  }
+  
+  .menu-toggle {
+    padding: 1em;
+    text-align: right;
+  }
+  
+  #menuToggle {
+    display: none;
+  }
+  
+  #menuToggle + .menu-toggle + .header-wrapper {
+    height: 0px;
+    overflow: hidden;
+  }
+  
+  #menuToggle:checked + .menu-toggle + .header-wrapper {
+    height: auto;
+    overflow: initial;
+  }
+  
+  #dropdown-toggle {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  
+    #menuToggle + .menu-toggle + .header-wrapper {
+      height: auto;
+      overflow: initial;
+    }
+  
+    .menu-item:hover .menu-icon,
+  .menu-item.active .menu-icon {
+      fill: initial;
+    }
+  }
+  
